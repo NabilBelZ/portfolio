@@ -14,6 +14,10 @@
             padding: 0;
             margin: 0;
         }
+        body{
+            height: 100vh;
+            background-color: #010e1b;
+        }
         main{
             background-color: #010e1b;
             margin: 0;
@@ -23,9 +27,6 @@
         }
         .navbar-brand{
             color: #dee2e6;
-        }
-        .nav-link, .nav-link.active{
-            color: white;
         }
         .navbar>.container-fluid{
             gap: 45px;
@@ -70,6 +71,69 @@
             visibility: visible;
             width: 50%;
         }
+        .nav-link-active{
+            color: #12d640;
+        }
+        .nav-link-active::before {
+            visibility: visible;
+            width: 50%;
+        }
+        .box{
+            background-color: #09203a;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 10px 36px;
+        }
+        .icon{
+            background-color: #010e1b;
+            padding: 10px 15px;
+            /* border: 2px solid #12d640; */
+            border-radius: 50%;
+        }
+        .social-icon{
+            background-color: #010e1b;
+            padding: 8px 13px;
+            border-radius: 50%;
+        }
+        .infos h5{
+            color: #12d640;
+            
+        }
+        .social-profiles{
+            display: flex;
+            width: 50px;
+            gap: 10px;
+        }
+        #contact{
+            margin: 0px 180px;
+        }
+        .social-icon a{
+            color: white;
+        }
+        .contact-title h2{
+            font-size: 14px;
+            font-weight: 500;
+            padding: 20px 0px 0px 0px;
+            margin: 0 0 20px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #dee2e6;
+        }
+        .contact-title h2::after{
+            position: absolute;
+            content: "";
+            width: 120px;
+            height: 1px;
+            margin: 7px 10px;
+            background-color: #dee2e6;
+        }
+        .col-md-6{
+            margin-bottom: 15px;
+        }
+
+
 
         /*** Responsive ***/
         @media only screen and (min-width: 900px){
@@ -98,7 +162,14 @@
             .container{
                 width: 95%;
             }
+            .nav-link-active::before {
+                visibility: hidden;
+            }
+            #contact{
+                margin: 0px;
+            }
         }
+        
     </style>
 </head>
 <body>
@@ -112,14 +183,14 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link" href="index.html">Home</a>
-                  <a class="nav-link" href="about.html">About</a>
-                  <a class="nav-link" href="#">Education</a>
-                  <a class="nav-link" href="#">Experience</a>
-                  <a class="nav-link" href="#">Projects</a>
-                  <a class="nav-link" href="#">Skills</a>
-                  <a class="nav-link" href="#">Resume</a>
-                  <a class="nav-link" href="#">Contact</a>  
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="education.html">Education</a>
+                    <a class="nav-link" href="experience.html">Experience</a>
+                    <a class="nav-link" href="projects.html">Projects</a>
+                    <a class="nav-link" href="skills.html">Skills</a>
+                    <a class="nav-link" href="CV/cv_bellaliz_nabil.pdf" target="_blank">Resume</a>
+                    <a class="nav-link nav-link-active" href="contact.html">Contact</a>  
                 </div>
               </div>
             </div>
@@ -127,7 +198,73 @@
     </header>
 
     <main>
+        <section id="contact">
+            <div class="container">
+                <div class="contact-title">
+                    <h2>contact</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="box">
+                            <div class="icon">
+                                <!-- <i class="fa-solid fa-location-dot" style="color: #12d640;"></i> -->
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="infos">
+                                <h5>Address</h5>
+                                <p>Kénitra</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                            <div class="infos">
+                                <h5>Social Profiles</h5>
+                                <div class="social-profiles">
+                                    <div class="social-icon">
+                                        <a href="https://www.linkedin.com/in/bellaliznabil/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </div>
+                                    <div class="social-icon">
+                                        <a href="https://github.com/NabilBelZ" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                    <div class="social-icon">
+                                        <a href="mailto:nabilbellaliz@gmail.com" target="_blank"><i class="fa-regular fa-paper-plane"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-md-6">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="infos">
+                                <h5>E-mail</h5>
+                                <p>nabilbellaliz@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div class="infos">
+                                <h5>Contact</h5>
+                                <p>(+212) 6 06 06 06 06</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
