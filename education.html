@@ -14,7 +14,8 @@
             padding: 0;
             margin: 0;
         }
-        main{
+        main, body{
+            height: 100%;
             background-color: #010e1b;
             margin: 0;
         }
@@ -164,6 +165,11 @@
         .card-bottom {
             padding: 5px 0px 0px 10px;
         }
+        .card-top img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
         .date {
             font-family: "Raleway", sans-serif;
         }
@@ -236,6 +242,102 @@
             }
         }
 
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 150px;
+            perspective: 1000px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            /* border-radius: 1rem; */
+        }
+
+        .flip-card-front {
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+            background-color: white;
+
+        }
+        .flip-card-front img{
+            width: 100% !important;
+            height: 100%;
+        }
+
+        .flip-card-back {
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+            background-color: rgb(9, 32, 58);
+            transform: rotateY(180deg);
+        }
+        .flip-card-back a{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+        }
+        .corner-border {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border: 2px solid white;
+            pointer-events: none;
+        }
+
+        .top-left {
+            top: 0;
+            left: 0;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+            border-left: none;
+            border-top: none;
+        }
+
+
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+            border-right: none;
+            border-top: none;
+        }
+
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+            border-left: none;
+            border-top: none;
+        }
+        
     </style>
 </head>
 <body>
@@ -255,7 +357,7 @@
                   <a class="nav-link" href="experience.html">Experience</a>
                   <a class="nav-link" href="projects.html">Projects</a>
                   <a class="nav-link" href="skills.html">Skills</a>
-                  <a class="nav-link" href="CV/cv_bellaliz_nabil.pdf" target="_blank">Resume</a>
+                  <a class="nav-link" style="color: white !important;" href="CV/CV BELLALIZ Nabil - 4A New.pdf" target="_blank">Resume</a>
                   <a class="nav-link" href="contact.html">Contact</a>  
                 </div>
               </div>
@@ -278,7 +380,7 @@
                         </div>
                         <div class="card-bottom">
                             <p class="diplome">Eng D. in Cybersecurity and Digital Trust</p>
-                            <p class="date">September 2023 - Juin 2024</p>
+                            <p class="date">September 2023 - Juin 2026</p>
                             <p style="font-style: italic;">Relevant Coursework</p>
                             <ul>
                                 <li>Systems & Network Security</li>
@@ -340,6 +442,47 @@
                 </div>
                 <div class="row">
 
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/cisco_logo.jpg" alt="wordpress certif">
+                            </div>
+                            <div class="flip-card-back">
+                                <a href="https://www.credly.com/badges/14ddbd1d-0448-4569-a13d-efd83516c9dd/public_url" target="_blank"><i class="fa-solid fa-link"></i></a>
+
+                                <div class="corner-border top-left"></div>
+                                <div class="corner-border bottom-right"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/wordpress.png" alt="wordpress certif">
+                            </div>
+                            <div class="flip-card-back">
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/DRAHAKT3KCXO" target="_blank"><i class="fa-solid fa-link"></i></a>
+
+                                <div class="corner-border top-left"></div>
+                                <div class="corner-border bottom-right"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/duolingo.jpg" alt="wordpress certif">
+                            </div>
+                            <div class="flip-card-back">
+                                <a href="https://certs.duolingo.com/8c42a8ea21705c0d86b1e662e1aee8e8" target="_blank"><i class="fa-solid fa-link"></i></a>
+
+                                <div class="corner-border top-left"></div>
+                                <div class="corner-border bottom-right"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
