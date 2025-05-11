@@ -153,13 +153,12 @@
         .card {
             max-width: 300px;
             border-radius: 0.5rem;
-            /* background-color: #fff; */
             background-color: rgb(9, 32, 58);
             color: white;
-            /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); */
             box-shadow: rgba(123, 123, 123, 0.063) 0px 7px 29px 0px;
             border: 1px solid transparent;
             padding: 0;
+            height: 500px !important;
         }
 
         .card a {
@@ -167,7 +166,7 @@
         }
 
         .content {
-        padding: 1.1rem;
+            padding: 1.1rem;
         }
 
         .image {
@@ -248,6 +247,11 @@
         .modal-content{ 
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         }
+        .modal-body i::before{
+            content: "\f0c1";
+        }
+        
+
 
         
     </style>
@@ -284,38 +288,41 @@
                 <h2>Projects</h2>
               </div>
               <div class="row">
-                <div class="card col-sm-4">
+
+                <div class="card col-sm-4 d-flex flex-column h-100">
                     <div class="image">
-                        <img src="images/wordpress.png" alt="">
+                        <img src="images/tangermed.jpg" alt="tangermed passagers">
                     </div>
                     <div class="content">
                         <a href="#">
                             <span class="title">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            TangerMed Passengers & MASEN Websites – Front-End & Drupal
                             </span>
                         </a>
                     
                         <p class="desc">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                            dolores, possimus pariatur animi temporibus nesciunt praesentium 
+                            During my internship, I was responsible for the complete front-end development of the TangerMed Passengers website. My goal was to deliver a modern, responsive user interface based on UI/UX mockups, using HTML5, CSS3, and JavaScript. I then converted...
                         </p>
                     
                         <!-- Bouton pour ouvrir le modal -->
-                        <button type="button" class="action" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                        <button type="button" class="action" data-bs-toggle="modal" data-bs-target="#exampleModalCenter1">
                             Read more
                             <span aria-hidden="true">→</span>
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">TangerMed Passengers & MASEN Websites – Front-End & Drupal</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        ...
+                                        During my internship, I was responsible for the complete front-end development of the TangerMed Passengers website. My goal was to deliver a modern, responsive user interface based on UI/UX mockups, using HTML5, CSS3, and JavaScript. I then converted the front-end into a custom Drupal 9 theme, optimized for performance and client requirements. <br><br>
+                                        I also contributed to the Drupal theming of a page for the MASEN website, ensuring full graphic integration and multi-browser compatibility. This project helped me strengthen my collaboration skills and maintain high-quality standards in a professional development environment. 
+                                        <br><br> 
+                                        <i class="fa-solid fa-link"></i>  Link : <a href="https://www.tangermed-passagers.com/fr" target="_blank">TangerMed Passagers</a>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" data-bs-dismiss="modal">Close</button>
@@ -327,38 +334,39 @@
                     </div>
                         
                 </div>
-                <div class="card col-sm-4">
+
+                <div class="card col-sm-4 d-flex flex-column h-100">
                     <div class="image">
-                        <img src="images/wordpress.png" alt="">
+                        <img src="images/tontine_logo.png" alt="tontine">
                     </div>
                     <div class="content">
                         <a href="#">
                             <span class="title">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Tontine Management Web App – Spring Boot
                             </span>
                         </a>
                     
                         <p class="desc">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                            dolores, possimus pariatur animi temporibus nesciunt praesentium 
+                            This project aimed to develop a web application to manage a tontine (a collective savings system). Built with Spring Boot and MySQL, the app features group creation, member management, contribution tracking, lottery draws, and payment history. I also implemented a secure admin interface for managing
                         </p>
                     
                         <!-- Bouton pour ouvrir le modal -->
-                        <button type="button" class="action" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                        <button type="button" class="action" data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">
                             Read more
                             <span aria-hidden="true">→</span>
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Tontine Management Web App – Spring Boot</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        ...
+                                        This project aimed to develop a web application to manage a tontine (a collective savings system). Built with Spring Boot and MySQL, the app features group creation, member management, contribution tracking, lottery draws, and payment history. <br><br>
+                                        I also implemented a secure admin interface for managing operations and generating reports. This project enhanced my skills in Java, MVC architecture, web security, and enterprise application development.
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" data-bs-dismiss="modal">Close</button>
@@ -370,38 +378,40 @@
                     </div>
                         
                 </div>
-                <div class="card col-sm-4">
+
+                <div class="card col-sm-4 d-flex flex-column h-100">
                     <div class="image">
-                        <img src="images/wordpress.png" alt="">
+                        <img src="images/onedrive_logo.png" alt="onedrive logo">
                     </div>
                     <div class="content">
                         <a href="#">
                             <span class="title">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                               OneDrive – Car Rental Platform
                             </span>
                         </a>
                     
                         <p class="desc">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                            dolores, possimus pariatur animi temporibus nesciunt praesentium 
+                            As part of my freelance work, I developed a car rental platform for OneDrive. The website features dynamic vehicle management, a booking system, and an admin dashboard for managing reservations. The project was built using Laravel, HTML, CSS, JavaScript, and MySQL. The platform allows users to view available vehicles...
                         </p>
                     
                         <!-- Bouton pour ouvrir le modal -->
-                        <button type="button" class="action" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                        <button type="button" class="action" data-bs-toggle="modal" data-bs-target="#exampleModalCenter3">
                             Read more
                             <span aria-hidden="true">→</span>
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal fade" id="exampleModalCenter3" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">OneDrive – Car Rental Platform</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        ...
+                                        As part of my freelance work, I developed a car rental platform for OneDrive. The website features dynamic vehicle management, a booking system, and an admin dashboard for managing reservations. The project was built using Laravel, HTML, CSS, JavaScript, and MySQL. The platform allows users to view available vehicles, make reservations, and manage bookings in real-time. <br><br>
+                                        I focused on delivering a responsive design, ensuring compatibility across devices, and implemented an efficient SEO strategy to improve online visibility. <br><br>
+                                        <i class="fa-solid fa-link"></i>  Link : <a href="https://onedrive-car.com/" target="_blank">OneDrive</a>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" data-bs-dismiss="modal">Close</button>
@@ -413,38 +423,218 @@
                     </div>
                         
                 </div>
-                <div class="card col-sm-4">
+
+                <div class="card col-sm-4 d-flex flex-column h-100">
                     <div class="image">
-                        <img src="images/wordpress.png" alt="">
+                        <img src="images/elbakriluxecar_logo.png" alt="elbakriluxecar logo">
                     </div>
                     <div class="content">
                         <a href="#">
                             <span class="title">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                               El Bakri Luxe Car – Car Rental Website
                             </span>
                         </a>
                     
                         <p class="desc">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                            dolores, possimus pariatur animi temporibus nesciunt praesentium 
+                            For El Bakri Luxe Car, I built a custom car rental website that offers users a seamless booking experience. The site includes a dynamic vehicle catalog, a booking system with real-time availability, and an easy-to-navigate admin panel for managing bookings and client requests...
                         </p>
                     
                         <!-- Bouton pour ouvrir le modal -->
-                        <button type="button" class="action" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                        <button type="button" class="action" data-bs-toggle="modal" data-bs-target="#exampleModalCenter4">
                             Read more
                             <span aria-hidden="true">→</span>
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal fade" id="exampleModalCenter4" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">El Bakri Luxe Car – Car Rental Website</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        ...
+                                        For El Bakri Luxe Car, I built a custom car rental website that offers users a seamless booking experience. The site includes a dynamic vehicle catalog, a booking system with real-time availability, and an easy-to-navigate admin panel for managing bookings and client requests. <br><br>
+                                        Using Laravel and modern web technologies (HTML, CSS, JavaScript, MySQL), I optimized the platform for both user experience and SEO, ensuring fast load times and high search engine ranking. I also provided hosting setup and deployment assistance, ensuring a smooth transition to production. <br><br>
+                                        <i class="fa-solid fa-link"></i>  Link : <a href="https://elbakri-luxecar.com/" target="_blank">El Bakri Luxe Car</a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                        
+                </div>
+
+                <div class="card col-sm-4 d-flex flex-column h-100">
+                    <div class="image">
+                        <img src="images/spajadvip_logo.png" alt="spajadvip logo">
+                    </div>
+                    <div class="content">
+                        <a href="#">
+                            <span class="title">
+                               SPA JAD VIP – Beauty & Spa Salon Website
+                            </span>
+                        </a>
+                    
+                        <p class="desc">
+                            For SPA JAD VIP, I developed a stunning, responsive website to showcase the salon’s services, team, and facilities. The website includes an interactive gallery, detailed service descriptions, and an integrated online appointment booking system...
+                        </p>
+                    
+                        <!-- Bouton pour ouvrir le modal -->
+                        <button type="button" class="action" data-bs-toggle="modal" data-bs-target="#exampleModalCenter5">
+                            Read more
+                            <span aria-hidden="true">→</span>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter5" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">SPA JAD VIP – Beauty & Spa Salon Website</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                       For SPA JAD VIP, I developed a stunning, responsive website to showcase the salon’s services, team, and facilities. The website includes an interactive gallery, detailed service descriptions, and an integrated online appointment booking system. <br><br>
+                                       Built using Laravel, HTML, CSS, and JavaScript, I designed the site with an emphasis on a clean, elegant aesthetic and a smooth user experience. The project was SEO-optimized to enhance visibility and drive customer engagement, with a mobile-first design to cater to on-the-go customers. <br><br>
+                                       <i class="fa-solid fa-link"></i>  Link : <a href="https://spa-jad-vip.com/" target="_blank">SPA JAD VIP</a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                        
+                </div>
+
+                <div class="card col-sm-4 d-flex flex-column h-100">
+                    <div class="image">
+                        <img src="images/doha_logo.png" alt="doha logo">
+                    </div>
+                    <div class="content">
+                        <a href="#">
+                            <span class="title">
+                                Drupal Integration – Conserveries Marocaines DOHA & CMC
+                            </span>
+                        </a>
+                    
+                        <p class="desc">
+                            I took part in a website modernization project for Conserveries Marocaines DOHA. My main task was to convert graphic mockups into a custom Drupal 9 theme while adhering to performance and accessibility standards. Additionally, I worked on the CMC website...
+                        </p>
+                    
+                        <!-- Bouton pour ouvrir le modal -->
+                        <button type="button" class="action" data-bs-toggle="modal" data-bs-target="#exampleModalCenter6">
+                            Read more
+                            <span aria-hidden="true">→</span>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter6" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Drupal Integration – Conserveries Marocaines DOHA & CMC</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        I took part in a website modernization project for Conserveries Marocaines DOHA. My main task was to convert graphic mockups into a custom Drupal 9 theme while adhering to performance and accessibility standards. <br><br>
+                                        Additionally, I worked on the CMC website, implementing design improvements and enhancing the user experience. This project allowed me to gain hands-on experience with the Drupal ecosystem, theme structuring, and collaboration with designers and backend developers.
+                                        <br><br>
+                                        <i class="fa-solid fa-link"></i>  Link : <a href="https://catalogue.conserveriesdoha.com/" target="_blank">LES CONSERVERIES MAROCAINES DOHA</a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                        
+                </div>
+
+                <div class="card col-sm-4 d-flex flex-column h-100">
+                    <div class="image">
+                        <img src="images/conference_logo.png" alt="techub logo">
+                    </div>
+                    <div class="content">
+                        <a href="#">
+                            <span class="title">
+                                Conference Management Platform – PHP/MySQL
+                            </span>
+                        </a>
+                    
+                        <p class="desc">
+                            As part of my end-of-year academic project, I designed and developed a complete web platform for managing events and conferences. The application allows organizers to create conferences, add sessions and speakers, while participants can register, view the program, and receive notifications...
+                        </p>
+                    
+                        <!-- Bouton pour ouvrir le modal -->
+                        <button type="button" class="action" data-bs-toggle="modal" data-bs-target="#exampleModalCenter7">
+                            Read more
+                            <span aria-hidden="true">→</span>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter7" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Conference Management Platform – PHP/MySQL</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        As part of my end-of-year academic project, I designed and developed a complete web platform for managing events and conferences. The application allows organizers to create conferences, add sessions and speakers, while participants can register, view the program, and receive notifications. The project was built using PHP and MySQL, with a responsive HTML/CSS interface. This experience strengthened my backend skills and my understanding of relational database design.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                        
+                </div>
+
+                <div class="card col-sm-4 d-flex flex-column h-100">
+                    <div class="image">
+                        <img src="images/vba_logo.png" alt="vba logo">
+                    </div>
+                    <div class="content">
+                        <a href="#">
+                            <span class="title">
+                                Automated Time Tracking System – VBA
+                            </span>
+                        </a>
+                    
+                        <p class="desc">
+                            During my internship at the National Ports Agency, I developed an intelligent time tracking system to monitor employee working hours. Built with VBA (Visual Basic for Applications), the system automated data entry, processing, and attendance analysis...
+                        </p>
+                    
+                        <!-- Bouton pour ouvrir le modal -->
+                        <button type="button" class="action" data-bs-toggle="modal" data-bs-target="#exampleModalCenter8">
+                            Read more
+                            <span aria-hidden="true">→</span>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter8" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Automated Time Tracking System – VBA</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        During my internship at the National Ports Agency, I developed an intelligent time tracking system to monitor employee working hours. Built with VBA (Visual Basic for Applications), the system automated data entry, processing, and attendance analysis. <br><br>
+                                        I also designed scripts to generate monthly reports automatically, significantly reducing manual processing time. This solution helped the organization optimize its HR management and improve data accuracy.
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" data-bs-dismiss="modal">Close</button>
